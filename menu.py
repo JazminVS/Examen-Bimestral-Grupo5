@@ -66,7 +66,7 @@ def ejercicio2():
 
 def ejercicio3():
 	print("3. Contar palabras")
-	from tkinter import *
+from tkinter import *
 from tkinter import messagebox
 root=Tk()
 root.title("La conjura de los necios")
