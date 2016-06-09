@@ -1,8 +1,8 @@
 def creartxt():
-	archi=open('NumeroPrimo.txt', 'w')
+	archi=open('Multiplo.txt', 'w')
 	archi.close()
 def grabartxt(num):
-	archi=open('NumeroPrimo.txt', 'a')
+	archi=open('Multiplo.txt', 'a')
 	archi.write(str(num)+"\t")
 	archi.close()
 
