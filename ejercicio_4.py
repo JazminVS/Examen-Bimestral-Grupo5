@@ -4,7 +4,7 @@ from tkinter import *
 def hacer_click ():
 	try:
 	 _palabra= str(entrada_texto.get())
-	 _palabra=(_valor)
+	 _palabra=(_palabra)
 	 etiqueta.config(text=_palabra)
 	except ValueError:
 	 etiqueta.config(text="INGRESE UN NUMERO: ")
@@ -15,6 +15,7 @@ def hacer_click ():
 	 etiqueta (blob1.translate (to = "en")) ##"en" en esta parte se pone el idionma al que se quiere traducir
 	 for sentence in blob1.sentences:
 		 etiqueta(sentence.sentiment.polarity)
+		 
 
 app=Tk()
 app.title("MI SEGUNDA APP GRAFICA")
