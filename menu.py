@@ -1,8 +1,9 @@
 
-def creartxt():
+def creartxtEjercicio1():
 	archi=open('NumeroPrimo.txt', 'w')
 	archi.close()
-def grabartxt(num):
+
+def grabartxtEjercicio1(num):
 	archi=open('NumeroPrimo.txt', 'a')
 	archi.write(str(num)+"\t")
 	archi.close()
@@ -26,36 +27,41 @@ def primo1(num, n):
 
 def ejercicio1():
 	print("1. N numeros primos")
-	creartxt()
+	creartxtEjercicio1()
 	print("Calcular n primos")
 	numero = int(input("Ingrese un numero: "))
 	for i in range(1, numero):
 		primo(i, numero)
 		aux=primo1(i,numero)
-		grabartxt(aux)
+		grabartxtEjercicio1(aux)
 
-def creartxt():
+
+
+def creartxtEjercicio2():
 	archi=open('Multiplo.txt', 'w')
 	archi.close()
 	
-def grabartxt(num):
+def grabartxtEjercicio2(num):
 	archi=open('Multiplo.txt', 'a')
 	archi.write(str(num)+"\t")
 	archi.close()
 
 def ejercicio2():
 	print("2. N multiplos de un numero")
-	creartxt()
+	creartxtEjercicio2()
 	print("Multiplos de un numero")
 	numeroI = int(input("Ingrese un numero: "))
 	numeroM = numeroI
 	numeroF = 0
 	for i in range(1, 1000):
 		print (numeroI)
-		grabartxt(numeroI)
+		grabartxtEjercicio2(numeroI)
 		numeroI = numeroI + numeroM
 		if numeroI > 1000:
 			exit()
+
+
+
 
 def ejercicio3():
 	print("3. Contar palabras")
