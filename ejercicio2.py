@@ -3,7 +3,7 @@ def creartxt():
 	archi.close()
 def grabartxt(num):
 	archi=open('NumeroPrimo.txt', 'a')
-	archi.write(str(num))
+	archi.write(str(num)+"\t")
 	archi.close()
 
 creartxt()
