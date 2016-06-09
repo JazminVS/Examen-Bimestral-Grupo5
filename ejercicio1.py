@@ -1,6 +1,6 @@
-﻿n,cont = 4,2
-num=int(input("ingrese un numero\n"))
-if(num>2):
+﻿n, cont = 4, 2
+num = int(input("Ingrese un numero: "))
+if(num > 2):
  cad = "2 - 3"
  while cont < num:
   i=2
