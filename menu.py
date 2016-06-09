@@ -161,7 +161,27 @@ def ejercicio5():
 
 def ejercicio6():
 	print("6. Tablero raro de ajedrez")
+from tkinter import *
+tablero = Tk()
+canvas = Canvas (tablero, width =700, height =700)
+canvas.pack()
+canvas.create_line( 45, 80, 90, 10,width =70,fill="black")
+canvas.create_line( 115, 80, 160, 10,width =70,fill="black")
+canvas.create_line( 45, 220, 90, 150,width =70,fill="black")
+canvas.create_line( 115, 290, 160, 220,width =70,fill="black")
+canvas.create_line( 45, 360, 90, 290,width =70,fill="black")
+canvas.create_line( 115, 430, 160, 360,width =70,fill="black")
+canvas.create_line( 45, 500, 90, 430,width =70,fill="black")
+canvas.create_line( 115, 570, 160, 500,width =70,fill="black")
 
+canvas.create_line( 185, 80, 230, 10,width =70,fill="black")
+canvas.create_line( 255, 150, 300, 80,width =70,fill="black")
+canvas.create_line( 185, 220, 230, 150,width =70,fill="black")
+canvas.create_line( 255, 290, 300, 220,width =70,fill="black")
+canvas.create_line( 185, 360, 230, 290,width =70,fill="black")
+canvas.create_line( 255, 430, 300, 360,width =70,fill="black")
+canvas.create_line( 185, 500, 230, 430,width =70,fill="black")
+canvas.create_line( 255, 570, 300, 500,width =70,fill="black")
 
 print("ESCUELA POLITECNICA NACIONAL")
 print("ESCUELA DE FORMACION DE TECNOLOGOS")
