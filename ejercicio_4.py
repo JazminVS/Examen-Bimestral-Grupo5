@@ -11,7 +11,7 @@ def hacer_click ():
 app=Tk()
 app.title("MI SEGUNDA APP GRAFICA")
 
-#VENTANA PRINCIPAL 
+#CUADRO DE TEXTO
 vp=Frame(app)
 vp.grid(column=0, row=0, padx=(50,50), pady=(10,10))
 vp.columnconfigure(0, weight=1)
