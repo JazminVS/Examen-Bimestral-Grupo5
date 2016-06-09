@@ -1,12 +1,20 @@
+from  textblob import TextBlob
 import sys 
 from tkinter import *
 def hacer_click ():
 	try:
-	 _palabra= (entrada_texto.get())
+	 _palabra= str(entrada_texto.get())
 	 _palabra=(_valor)
 	 etiqueta.config(text=_palabra)
 	except ValueError:
 	 etiqueta.config(text="INGRESE UN NUMERO: ")
+	 text = _palabra
+	 blob1 = TextBlob(text)
+	 blob1.tags
+	 blob1.noun_phrases
+	 etiqueta (blob1.translate (to = "en")) ##"en" en esta parte se pone el idionma al que se quiere traducir
+	 for sentence in blob1.sentences:
+		 etiqueta(sentence.sentiment.polarity)
 
 app=Tk()
 app.title("MI SEGUNDA APP GRAFICA")
