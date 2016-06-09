@@ -4,7 +4,7 @@ if(num > 2):
  cad = "2 - 3"
  while cont < num:
   i=2
-  while i<=n:
+  while i<=num:
    if(i==n):
     cad= cad+" - "+str(i)
     cont=cont+1
