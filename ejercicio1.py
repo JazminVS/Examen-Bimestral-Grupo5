@@ -1,5 +1,9 @@
 print("Multiplos de un numero")
-numero = int(input("Ingrese un numero: "))
-for i in range(10):
-    suma = suma + numero
-    print (suma)
+numeroI = int(input("Ingrese un numero: "))
+numeroM = numeroI
+numeroF = 0
+for i in range(1, 1000):
+    print (numeroI)
+    numeroI = numeroI + numeroM
+    if numeroI > 1000:
+        exit()
